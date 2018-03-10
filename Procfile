@@ -1,3 +1,1 @@
-# Pipfile
-[requires]
-python_version = "3.6"
+web: gunicorn pages_project.wsgi --log-file -
