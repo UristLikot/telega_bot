@@ -2,7 +2,7 @@ import random
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackQueryHandler
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 
-updater = Updater(token='TOKEN')
+updater = Updater(token='459744558:AAEWYIqK8c-VTomDzIm_4Vre0f-bCJL0JXs')
 dispatcher = updater.dispatcher
 
 
