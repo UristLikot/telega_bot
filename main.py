@@ -12,14 +12,21 @@ def roll(s):
     MiddleCase = s.split(Splitter)
     CubeMass = int(MiddleCase[1])
     CubeNum = int(MiddleCase[0])
-    finalCase = []
+    FinalCase = []
+    FinalString = ''
 
     for i in range(CubeNum):
         CurrentCube = random.randint(1, CubeMass)
         CurrentCube = str(CurrentCube)
-        finalCase.append(CurrentCube)
-    print(finalCase)
-    return str(finalCase)
+        FinalCase.append(int(CurrentCube))
+        FinalCase.sort(reverse = True)
+
+    for i in range (len(FinalCase)):
+        FinalString = FinalString + str(FinalCase[i]) + ' ' 
+    
+    print(FinalString)
+
+    return str(FinalString)
 
 
 def startCommand(bot, update):
