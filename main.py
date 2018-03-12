@@ -1,6 +1,7 @@
 import random
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackQueryHandler
+
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackQueryHandler
 
 updater = Updater(token='TOKEN')
 dispatcher = updater.dispatcher
@@ -60,5 +61,3 @@ dispatcher.add_handler(text_message_handler)
 dispatcher.add_handler(callback_handler)
 
 updater.start_polling(clean=True)
-
-updater.idle()
